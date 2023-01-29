@@ -5,8 +5,6 @@
 
 ## Running the application
 
-The current *node_server* application is running on a remote server. Skip <b>Step 2</b> if you don't want to run your server locally.
-
  * <b>Step 1</b> (Running client application):
     
    - Change to *react_front* directory `cd react_front` and install all the node packages `npm i`
