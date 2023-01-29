@@ -14,7 +14,7 @@ The current *node_server* application is running on a remote server. Skip <b>Ste
    
  * <b>Step 2</b> (Running server application):
  
-   *<b>Required ts-node to run this application. Skip first step if already installed.</b>*
+   *<b>Required "ts-node" package to run this application. Skip first step if already installed.</b>*
    
    - Install ts-node globally with the following command `npm install -g ts-node`
    - Change to *node_server* directory `cd node_server` and install all the node packages `npm i`
