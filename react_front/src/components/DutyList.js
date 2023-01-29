@@ -85,7 +85,10 @@ const DutyList = () => {
     try {
       dutyRequestData = (await dutyRequestFn({ variables: { duty: newDuty } }))
         .data;
-      setDuties(trimGQLDutiesTypeName(dutyRequestData[dutyRequestName]));
+      const finalDutyList = trimGQLDutiesTypeName(
+        dutyRequestData[dutyRequestName]
+      );
+      setDuties(finalDutyList);
     } catch (error) {
       showNotification({
         type: "error",
@@ -194,6 +197,7 @@ const DutyList = () => {
   const [addDuty] = useMutation(ADD_DUTY);
   const [removeDuties] = useMutation(REMOVE_DUTIES);
   const [updateDuty] = useMutation(UPDATE_DUTY);
+  const [initialLoaded, setInitialLoaded] = useState(false);
 
   useEffect(() => {
     if (networkStatus === 8) {
@@ -204,7 +208,10 @@ const DutyList = () => {
           "An error has ocurred when initially loading the data. Server might be down or there is a problem with your internet connection.",
       });
     }
-    if (data?.getDuties) setDuties(trimGQLDutiesTypeName(data.getDuties));
+    if (data?.getDuties && !initialLoaded) {
+      setDuties(trimGQLDutiesTypeName(data.getDuties));
+      setInitialLoaded(true);
+    }
   }, [data, networkStatus]);
 
   // *** RENDER FUNCTION *** //
