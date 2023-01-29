@@ -19,5 +19,5 @@ The current *node_server* application is running on a remote server. Skip <b>Ste
    - Install ts-node globally with the following command `npm install -g ts-node`
    - Change to *node_server* directory `cd node_server` and install all the node packages `npm i`
    - Make sure you have <b>postgresql</b> service running at default port, with a database named 'duties' created with 'admin@admin' user/password.
-   - Go to *react_front/services* directory and set <b>isDev</b> on 'service_config.js' to `true`
+   - Go to *react_front/src/services* directory and set <b>isDev</b> on 'service_config.js' to `true`
    - Run command `npm run server` to compile and lauch server at *localhost:3000*
