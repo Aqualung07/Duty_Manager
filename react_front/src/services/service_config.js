@@ -4,6 +4,7 @@ const service_config = (() => {
   const isDev = true;
   const port = 3000;
 
+  // Dev server still WIP. Change flag at your own risk :)
   const uri = isDev
     ? `http://localhost:${port}/graphql`
     : "https://pablosilva.me/duties";
