@@ -1,0 +1,30 @@
+{
+  "name": "duty_manager_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "ts-node --esm index.ts",
+    "format": "prettier --write \"**/*.{js,ts}\""
+  },
+  "author": "Pablo",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^3.11.1",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "pg": "^8.8.0",
+    "sequelize": "^6.28.0",
+    "sqlite3": "^5.1.4",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-plugin-import": "^2.25.4",
+    "parcel": "^2.2.1",
+    "process": "^0.11.10",
+    "typescript-strict-plugin": "^2.1.0"
+  }
+}
