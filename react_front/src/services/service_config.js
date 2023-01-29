@@ -1,7 +1,7 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
 const service_config = (() => {
-  const isDev = true;
+  const isDev = false;
   const port = 3000;
 
   const uri = isDev
