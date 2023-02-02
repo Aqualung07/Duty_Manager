@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint \"src/**/*.{js,jsx,ts}\" --quiet",
     "dev": "rm -rf ./.parcel-cache && parcel ./src/index.html",
-    "prod": "parcel build ./src/index.html",
+    "build": "parcel build ./src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx,ts}\""
   },
   "repository": {
