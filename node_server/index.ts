@@ -14,7 +14,7 @@ const PORT = 3000;
 
 DataBase.connect().then(db_feed);
 const app = express();
-const ENV = getenv("NODE_ENV");
+const ENV = getenv("NODE_ENV", 'production');
 
 async function createApolloServer() {
   const server = new ApolloServer({
