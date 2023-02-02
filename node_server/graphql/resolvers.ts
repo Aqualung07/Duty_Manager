@@ -16,8 +16,8 @@ const resolvers = {
           where: { id: args.duty.id },
         });
         if (!foundDuty) {
-            await Duties_db.getInstance().create(args.duty);
-        };
+          await Duties_db.getInstance().create(args.duty);
+        }
         return await Duties_db.getInstance().findAll();
       } catch (error) {
         console.error(error);
