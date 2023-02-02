@@ -4,6 +4,8 @@
   * Bash shell
 
 ## Running the application
+ 
+ *If you do not want to run the server application locally, skip <b>Step 2</b>*
 
  * <b>Step 1</b> (Running client application):
     
