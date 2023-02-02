@@ -19,4 +19,4 @@
    - Install ts-node globally with the following command `npm install -g ts-node`
    - Change to *node_server* directory `cd node_server` and install all the node packages `npm i`
    - Make sure you have <b>postgresql</b> service running locally at default port, with a database named 'duties' created with 'admin@admin' user/password.
-   - Run command `npm run server` to compile and lauch server at *localhost:3000*
+   - Run command `npm run dev` to compile and lauch server at *localhost:3000*
