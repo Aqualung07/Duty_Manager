@@ -5,7 +5,7 @@
 
 ## Running the application
 
- *If you don't want to set everything up locally, you can just browse <b>https://pablosilva.me/</b> and see the application working.*
+ *If you don't want to set everything up locally, you can just browse <b>https://pablosilva.me/</b> and see the application working. (NOTE: Domain not active at the moment)*
  
  *If you want to run the Client Application locally but not the Server, skip <b>Step 2</b>*
 
